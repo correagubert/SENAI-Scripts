@@ -21,4 +21,9 @@ function calcIdade(){
         document.getElementById("dogResult").innerHTML = "Seu cachorro tem "+idadeRealCachorro+" anos. Já pode ir preparando a cremação dele."
     }
 }
-        
+function pagCalcMedia(){
+    window.location.href="mediasystem.html"
+}
+function youtubeDT(){
+    window.open("https://www.youtube.com/watch?v=D1IOJs6H9qg")
+}

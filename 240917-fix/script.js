@@ -101,3 +101,28 @@ function ex10(){
         alert("Não, "+num+" não é primo.")
     }
 }
+
+function verificarPrimos(i){
+    let qtdDivisores = 0
+    for(let ant = 1; ant <= i; ant++){
+        if(i%ant == 0){
+            qtdDivisores++
+        }
+    }if (qtdDivisores == 2) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function desafio(){
+    let num = Number(prompt("Digite um número:"))
+    let tabela = "";
+    for(let i = 1; i <= num; i++){
+        if (verificarPrimos(i) == true) {
+            tabela+="\n"+i+" é primo."
+        } else {
+            tabela+="\n"+i+" não é primo."
+        }
+    }alert(tabela)
+}

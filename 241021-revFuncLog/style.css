@@ -7,6 +7,7 @@ body{
 }
 
 .container{
+    background-color: gainsboro;
     border-style: double;
     width: auto;
     display: flex;
@@ -14,17 +15,8 @@ body{
     align-items: center;
 }
 
-.register{
+.crud{
     color: black;
-    background-color: gainsboro;
-    border-style: groove;
-    text-align: center;
-    border-width: 20px;
-    border-color: gray;
-    width: 30vw;
-}
-
-.login{
     background-color: gainsboro;
     border-style: groove;
     text-align: center;
@@ -44,12 +36,22 @@ body{
     background-color: #D13442;
 }
 
-h1{
+#edit{
+    width: 100%;
+    background-color: #D13442;
+}
+
+#delete{
+    width: 100%;
+    background-color: #D13442;
+}
+
+.title{
     color: #D13442;
 }
 
 input{
     border-radius: 3px;
-    width: 235px;
+    width: 150px;
     height: 15px;
 }

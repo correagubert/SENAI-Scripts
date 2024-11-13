@@ -16,6 +16,7 @@ function login() {
             if (usuario.login == login && usuario.senha == senha) {
                 mensagem = "Login realizado.";
                 localStorage.setItem("logado", JSON.stringify(usuario));
+                window.location.href = "home.html"
                 break;
             }
         }
@@ -39,4 +40,15 @@ function cadastra() {
     } else {
         alert("As senhas são diferentes.");
     }
+}
+
+function deslogar() {
+    localStorage.setItem("logado", JSON.stringify(null));
+    window.location.href = "index.html";
+}
+
+function carrega() {
+    let usuarioLogado = JSON.parse(localStorage.getItem("logado"));
+    let nome = usuarioLogado.login;
+    document.getElementById("nome").innerHTML = nome;
 }
